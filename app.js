@@ -3,10 +3,11 @@
 const revString = (str)=>{
     const arr =str.split("");
     arr.reverse();
-    str=arr.join(str);
+    str=arr.join("");
+    console.log(str);
 }
 
-revString("elma");
+revString("oguchi");
 
 
 // how to find max character in a string and how many times it appears in the
