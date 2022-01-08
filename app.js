@@ -20,3 +20,6 @@ const maxChar = (str)=>{
 
 }
 maxChar("elma");
+
+
+//  how to polybdrom
