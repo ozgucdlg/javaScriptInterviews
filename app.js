@@ -29,9 +29,9 @@ maxChar("elma");
 
 const list = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
-const askForPeople = propmt("what is yout Fvaorite day");
+// const askForPeople = propmt("what is yout Fvaorite day");
 
-switch (List) {
+/* switch (List) {
     case 1:
         askForPeople === "Monday"
 
@@ -70,3 +70,17 @@ switch (List) {
         alert(`your decision is Sunday are you sure !! `)
         break;
 }
+ */
+
+
+const employeeList = [
+    {name:'Ozguc'},
+    {lastName:'Dalga'},
+    {age:30,},
+    {Department:'It'}
+]
+
+
+const findingOfEmployee = employeeList.map(employee=>(employee.name));
+
+console.log(findingOfEmployee)
