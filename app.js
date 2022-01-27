@@ -81,6 +81,6 @@ const employeeList = [
 ]
 
 
-const findingOfEmployee = employeeList.map(employee=>(employee.name));
+const findingOfEmployee = employeeList.map(employee=>(employee.name||employee.Department || employee.lastName ||employee.age));
 
 console.log(findingOfEmployee)
