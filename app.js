@@ -88,3 +88,9 @@ const employeeList = [
 const findingOfEmployee = employeeList.map(employee=>(`the name of Employee ${employee.name }, the department ${employee.Department}` ));
 
 console.log(findingOfEmployee)
+
+employeeList.push([ {name:'Kubra',lastName:'Dalga',
+age:30,
+Department:'It'}])
+
+console.log(employeeList);
