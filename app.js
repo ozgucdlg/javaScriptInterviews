@@ -74,13 +74,17 @@ const list = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'
 
 
 const employeeList = [
-    {name:'Ozguc'},
-    {lastName:'Dalga'},
-    {age:30,},
-    {Department:'It'}
+    {name:'Ozguc',
+    lastName:'Dalga',
+    age:30,
+    Department:'It'},
+    {name:'Ozge',
+    lastName:'Elmas',
+    age:30,
+    Department:'Finance'}
 ]
 
 
-const findingOfEmployee = employeeList.map(employee=>(employee.name||employee.Department || employee.lastName ||employee.age));
+const findingOfEmployee = employeeList.map(employee=>(`the name of Employee ${employee.name }, the department ${employee.Department}` ));
 
 console.log(findingOfEmployee)
