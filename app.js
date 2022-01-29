@@ -94,6 +94,7 @@ age:30,
 Department:'It'}])
 
 console.log(employeeList);
-employeeListpush([ {name:'Kainat'}])
+employeeList.push([ {name:'Kainat'}])
+employeeList.push([ {lastName:'Dalga'}])
 
 console.log(employeeList);
