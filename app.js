@@ -1,9 +1,9 @@
 // how to reverse a string  
 
-const revString = (str)=>{
-    const arr =str.split("");
+const revString = (str) => {
+    const arr = str.split("");
     arr.reverse();
-    str=arr.join("");
+    str = arr.join("");
     console.log(str);
 }
 
@@ -12,10 +12,10 @@ revString("oguchi");
 
 // how to find max character in a string and how many times it appears in the
 
-const maxChar = (str)=>{
+const maxChar = (str) => {
     let obj = {};
     for (let char of str)
-    (!obj[char])? obj[char] =1 : obj[char]++;
+        (!obj[char]) ? obj[char] = 1 : obj[char]++;
     console.log(obj);
 
 }
@@ -74,27 +74,55 @@ const list = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'
 
 
 const employeeList = [
-    {name:'Ozguc',
-    lastName:'Dalga',
-    age:30,
-    Department:'It'},
-    {name:'Ozge',
-    lastName:'Elmas',
-    age:30,
-    Department:'Finance'}
+    {
+        name: 'Ozguc',
+        lastName: 'Dalga',
+        age: 30,
+        Department: 'It'
+    },
+    {
+        name: 'Ozge',
+        lastName: 'Elmas',
+        age: 30,
+        Department: 'Finance'
+    }
 ]
 
 
-const findingOfEmployee = employeeList.map(employee=>(`the name of Employee ${employee.name }, the department ${employee.Department}` ));
+const findingOfEmployee = employeeList.map(employee => (`the name of Employee ${employee.name}, the department ${employee.Department}`));
 
 console.log(findingOfEmployee)
 
-employeeList.push([ {name:'Kubra',lastName:'Dalga',
-age:30,
-Department:'It'}])
+employeeList.push([{
+    name: 'Kubra', lastName: 'Dalga',
+    age: 30,
+    Department: 'It'
+}])
 
 console.log(employeeList);
-employeeList.push([ {name:'Kainat'}])
-employeeList.push([ {lastName:'Dalga'}])
+employeeList.push([{ name: 'Kainat' }])
+employeeList.push([{ lastName: 'Dalga' }])
 
 console.log(employeeList);
+
+
+
+
+
+const clickButton = document.getElementById('btnRed');
+clickButton.addEventListener("click", () => {
+
+    document.body.style.backgroundColor = "red";
+});
+
+const clickButtonYellow = document.getElementById('btnYellow');
+clickButtonYellow.addEventListener("click", () => {
+
+    document.body.style.backgroundColor = "yellow";
+});
+
+const clickButtonBlue = document.getElementById('btnBlue');
+clickButtonBlue.addEventListener("click", () => {
+
+    document.body.style.backgroundColor = "blue";
+});
